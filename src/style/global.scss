@@ -1,7 +1,39 @@
+/* VARIABLES */
+:root{
+    /* colors */
+    --backgroundcolor-primary: #1C1C1C;
+    --backgroundcolor-primary-soft: #303030;
+    --backgroundcolor-secondary: #0282F9;
+    /* container */
+    --c-size:1100px;
+}
 /* RESET */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+}
+/* TYPOGRAPHY */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/* LAYOUT */
+.container_{
+    max-width: var(--c-size);
+    margin: auto;
+}
+.nav_layout{
+    ul{
+        display: flex;
+        list-style: none;
+        
+        a{
+            display: inline-block;
+            padding: 10px;
+            text-decoration: none;
+        }
+    }
 
 }
