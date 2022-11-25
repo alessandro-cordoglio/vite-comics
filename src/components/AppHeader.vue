@@ -17,6 +17,9 @@ export default {
             ]     
        }
     },
+    methods:{
+        
+    },
     components: {
    
   }
@@ -43,8 +46,19 @@ export default {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        .logo{
+            padding: 20px 0;
+        }
     }
     .nav_layout{
         height: 100%;
+        a{
+            font-size: 14px;
+            font-weight: bold;
+            &:hover{
+              color: var(--backgroundcolor-secondary);  
+            }
+        }
     }
 </style>

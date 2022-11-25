@@ -1,3 +1,4 @@
+<!-- SCRIPT -->
 <script>
 
 
@@ -8,10 +9,22 @@ export default {
 }
 </script>
 
+<!-- TEMPLATE -->
 <template>
-    <div>main</div>
+    <div class="container_">
+      <div class="content">
+      --> Content goes here &lt;--
+      </div>
+    </div>
 </template>
 
-<style lang="scss" scoped>
+<!-- STYLE -->
+<style lang="scss" scoped> 
+  .content{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 50px 0;
 
+  }
 </style>

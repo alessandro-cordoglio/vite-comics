@@ -20,6 +20,9 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 /* LAYOUT */
+main{
+    background-color: var(--backgroundcolor-primary);
+}
 .container_{
     max-width: var(--c-size);
     margin: auto;
@@ -28,11 +31,12 @@ body{
     ul{
         display: flex;
         list-style: none;
-        
-        a{
-            display: inline-block;
-            padding: 10px;
-            text-decoration: none;
+        li{ 
+            padding: 13px ;
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
         }
     }
 
