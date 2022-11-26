@@ -1,6 +1,4 @@
 <script>
-
-
 export default {
   data(){
     return{
@@ -25,12 +23,11 @@ export default {
                 image: 'buy-dc-power-visa.svg',
                 info:'DC POWER VISA'
               } ,
-            ]
+            ],
     }
-
   },
   components: {
-   
+
   }
 }
 </script>
@@ -49,7 +46,102 @@ export default {
     </div>
   </section>
   <section class="small_info--section">
-    
+    <div class="container_ small_info">
+      <div class="left_footer">
+        <div class="info_block first_info">
+          <div class="info_list">
+            <div class="info_title">
+              <h3>DC COMICS</h3>
+            </div>
+            <div>
+              <ul class="list_elements">
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Chara</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Cacters</a></li>
+                <li><a href="#">Charars</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Charaters</a></li> 
+              </ul>
+            </div>
+          </div>
+          <div class="first_info--second_block">
+            <div class="info_list">
+            <div class="info_title ">
+              <h3>SHOP</h3>
+            </div>
+            <div>
+              <ul class="list_elements">
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Chara</a></li>
+                <li><a href="#">Characters</a></li>
+              </ul>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="info_block second_info">
+          <div class="info_list">
+            <div class="info_title">
+              <h3>DC</h3>
+            </div>
+            <div>
+              <ul class="list_elements">
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Chara</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Cacters</a></li>
+                <li><a href="#">Charars</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Charaters</a></li> 
+                <li><a href="#">Cacters</a></li>
+                <li><a href="#">Charars</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Charaters</a></li> 
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="info_block third_info">
+          <div class="info_list">
+            <div class="info_title">
+              <h3>SITES</h3>
+            </div>
+            <div>
+              <ul class="list_elements">
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Chara</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Cacters</a></li>
+                <li><a href="#">Charars</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Charaters</a></li> 
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right_footer">
+        <div class="right_footer_bg">
+          <img src="../assets/dc-logo-bg.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sign_up--section">
+    <div class="container_">
+      <div class="sign_up--left">
+        <div class="btn">
+          <button class="main_button">
+              SIGN-UP NOW!
+          </button>
+        </div>
+      </div>
+      <div class="sign_up--right">
+          
+      </div>
+    </div>
   </section>
 </template>
 
@@ -61,7 +153,6 @@ export default {
     .item{
       padding: 40px 20px;
       color: white;
-
       .item_info{
         font-size: 14px;
         margin-left: 10px;
@@ -70,5 +161,30 @@ export default {
         width: 40px;
       }
     }
+  }
+
+  .small_info{
+    display: flex;
+    justify-content: space-between;
+    max-height: 450px;
+    align-items: center;
+  }
+  .left_footer{
+    display: flex;
+    padding-top: 40px ;
+    padding-bottom: 60px;
+    .info_title{
+      color: white;
+    }
+  }
+  .first_info--second_block{
+    margin-top: 20px;
+  }
+  .info_block{
+    padding: 0px 20px;
+  }
+
+  .btn{
+    padding: 30px 0px;
   }
 </style>
