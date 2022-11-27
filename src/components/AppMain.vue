@@ -1,10 +1,10 @@
 <!-- SCRIPT -->
 <script>
-
+import AppCard from '../components/AppCard.vue'
 export default {
   data(){
     return{
-      series:[
+      dcSeries:[
   {
     "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
     "price": "$19.99",
@@ -81,6 +81,7 @@ export default {
     }
   },
   components: {
+    AppCard
   }
 }
 </script>
@@ -89,24 +90,33 @@ export default {
 <template>
     <section class="jumbotron">
     </section>
-    <section class="series">
-      <div>
-
+    <section class="series-section">
+      <div class="series_container container_">
+        <AppCard 
+          class="series"
+          v-for="series in dcSeries"
+          :img="series.thumb"
+          :did="series.series"
+        />
       </div>      
     </section>
 </template>
 
 <!-- STYLE -->
 <style lang="scss" scoped> 
-  .content{
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
-    padding: 50px 0;
-  }
   .jumbotron{
     padding: 230px 0 ;
     background-image: url(../assets/jumbotron.jpg);
+  }
+  .series_container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+  }
+  .series{
+    width: calc((100%/6) - 25px);
+    margin-right: 25px ;
+    color: white;
   }
 
 </style>
