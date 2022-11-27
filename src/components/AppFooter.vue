@@ -130,7 +130,7 @@ export default {
     </div>
   </section>
   <section class="sign_up--section">
-    <div class="container_">
+    <div class="container_ sign_up">
       <div class="sign_up--left">
         <div class="btn">
           <button class="main_button">
@@ -139,7 +139,17 @@ export default {
         </div>
       </div>
       <div class="sign_up--right">
-          
+        <div class="sign_up--title">
+          <span>FOLLOW US</span>
+        </div>
+        <div class="sign_up_social flex">
+          <div><img src="../assets/footer-facebook.png" alt=""></div>
+          <div><img src="../assets/footer-twitter.png" alt=""></div>
+          <div><img src="../assets/footer-youtube.png" alt=""></div>
+          <div><img src="../assets/footer-pinterest.png" alt=""></div>
+          <div><img src="../assets/footer-periscope.png" alt=""></div>
+         
+        </div>
       </div>
     </div>
   </section>
@@ -183,8 +193,25 @@ export default {
   .info_block{
     padding: 0px 20px;
   }
-
   .btn{
     padding: 30px 0px;
+  }
+  .sign_up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .sign_up--right{
+      display: flex;
+      .sign_up--title{
+        color: var(--backgroundcolor-secondary);
+        font-weight: bold;
+        font-size: 24px;
+      }
+      .sign_up_social{
+        img{
+          margin-left:15px ;
+        }
+      }
+    }
   }
 </style>

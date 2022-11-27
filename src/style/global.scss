@@ -1,4 +1,11 @@
 /* MIXINS */
+@mixin flex {
+    display: flex;
+}
+@mixin flex-column{
+    @include flex;
+    flex-direction: column;
+}
 @mixin reset-list {
     margin: 0;
     padding: 0;
@@ -93,4 +100,11 @@ main{
     font-size: 17px;
     color: white;
     font-weight: bold;
+}
+/* flex */
+.flex{
+    @include flex
+}
+.flex_column{
+    @include flex-column
 }
